@@ -30,6 +30,8 @@ jobs:
       with:
             image: vansharora16/action_practice
             registry: docker.io
+            dockerfile: Dockerfile
+            context: .
             username: ${{ secrets.DOCKER_USERNAME }}
             password: ${{ secrets.DOCKER_PASSWORD }}
 
